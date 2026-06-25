@@ -10,7 +10,8 @@ window.renderList = function (containerId, items, htmlFn) {
   document.getElementById("advantages").innerHTML =
     '<h2>Почему «Драйв»</h2><div class="cards">' +
     d.advantages.map(function (a) {
-      return '<div class="card"><div class="card-icon">' + a.icon +
+      var ico = (window.ICONS && window.ICONS[a.icon]) || "";
+      return '<div class="card"><div class="card-icon">' + ico +
         '</div><h3>' + a.title + '</h3><p>' + a.text + '</p></div>';
     }).join("") + '</div>';
 

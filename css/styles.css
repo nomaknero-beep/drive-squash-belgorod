@@ -123,5 +123,6 @@ h2 { font-size: clamp(26px, 4vw, 36px); margin-bottom: 28px; }
 .rating th { color: var(--muted); font-weight: 600; }
 .rating tbody tr:hover { background: var(--bg-alt); }
 .tour-title { margin: 24px 0 16px; }
+#rating h2 { color: var(--accent); }
 #contacts a { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
 #contacts a:hover { color: var(--accent); }

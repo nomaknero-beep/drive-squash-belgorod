@@ -6,6 +6,7 @@ window.renderList = function (containerId, items, htmlFn) {
 
 (function () {
   var d = window.CLUB_DATA;
+  if (!d) return;
   document.getElementById("advantages").innerHTML =
     '<h2>Почему «Драйв»</h2><div class="cards">' +
     d.advantages.map(function (a) {

@@ -11,7 +11,7 @@
     o.value = t; o.textContent = t; timeSel.appendChild(o);
   }
   var coachSel = form.querySelector('select[name="coach"]');
-  (window.CLUB_DATA.coaches || []).forEach(function (c) {
+  ((window.CLUB_DATA && window.CLUB_DATA.coaches) || []).forEach(function (c) {
     var o = document.createElement("option");
     o.value = c.name; o.textContent = c.name + " (" + c.role + ")";
     coachSel.appendChild(o);

@@ -25,7 +25,7 @@
     e.preventDefault();
     msg.textContent = "";
     var data = {
-      name: form.name.value.trim(),
+      name: form.querySelector('[name="name"]').value.trim(),
       phone: form.phone.value.trim(),
       date: form.date.value,
       time: form.time.value,

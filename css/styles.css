@@ -71,6 +71,14 @@ h2 { font-size: clamp(26px, 4vw, 36px); margin-bottom: 28px; }
 .card h3 { margin-bottom: 8px; }
 .price { font-size: 28px; font-weight: 800; color: var(--accent); margin: 8px 0; }
 .muted { color: var(--muted); }
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+.gallery-item { padding: 0; border: none; background: var(--bg-alt); cursor: pointer; border-radius: var(--radius); overflow: hidden; aspect-ratio: 4 / 3; }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .35s ease; }
+.gallery-item:hover img { transform: scale(1.06); }
+.lightbox { position: fixed; inset: 0; background: rgba(0,0,0,.88); display: none; align-items: center; justify-content: center; z-index: 100; padding: 24px; }
+.lightbox.open { display: flex; }
+.lightbox img { max-width: 92vw; max-height: 88vh; border-radius: 8px; box-shadow: 0 10px 40px rgba(0,0,0,.5); }
+.lightbox-close { position: absolute; top: 14px; right: 24px; background: none; border: none; color: #fff; font-size: 42px; line-height: 1; cursor: pointer; }
 .booking-form { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; max-width: 640px; }
 .booking-form .field { display: flex; flex-direction: column; gap: 6px; }
 .booking-form label { font-size: 14px; color: var(--muted); }

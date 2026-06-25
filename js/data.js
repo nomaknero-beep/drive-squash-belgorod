@@ -15,5 +15,17 @@ window.CLUB_DATA = {
   coaches: [
     { name: "Имя тренера", role: "Старший тренер", schedule: "Пн, Ср, Пт 18:00" },
     { name: "Имя тренера", role: "Тренер", schedule: "Вт, Чт 19:00" }
+  ],
+  // Фото галереи. Сохраните снимки в images/gallery/ как 1.jpg, 2.jpg и т.д.
+  // Несуществующие файлы автоматически скрываются — можно оставить с запасом.
+  gallery: [
+    "images/gallery/1.jpg",
+    "images/gallery/2.jpg",
+    "images/gallery/3.jpg",
+    "images/gallery/4.jpg",
+    "images/gallery/5.jpg",
+    "images/gallery/6.jpg",
+    "images/gallery/7.jpg",
+    "images/gallery/8.jpg"
   ]
 };

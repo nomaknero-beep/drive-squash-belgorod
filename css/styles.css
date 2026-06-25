@@ -113,7 +113,7 @@ h2 { font-size: clamp(26px, 4vw, 36px); margin-bottom: 28px; }
 .split-media { text-align: center; }
 .split-media img { width: 100%; max-width: 440px; height: auto; border-radius: var(--radius); box-shadow: var(--shadow); display: block; margin: 0 auto; }
 @media (max-width: 860px) { .split-layout { grid-template-columns: 1fr; gap: 32px; } }
-@media (min-width: 861px) { #contacts .split-media { margin-top: -170px; } }
+@media (min-width: 861px) { #contacts .split-media { margin-top: -90px; } }
 @media (max-width: 560px) { .booking-form { grid-template-columns: 1fr; } }
 @media (max-width: 720px) {
   .nav { display: none; }

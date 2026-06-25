@@ -74,13 +74,9 @@ h2 { font-size: clamp(26px, 4vw, 36px); margin-bottom: 28px; }
   transition: transform .3s ease, box-shadow .3s ease;
 }
 .card-icon svg { width: 34px; height: 34px; stroke-width: 1.9; }
-#advantages .cards .card:nth-child(odd) .card-icon {
-  background: linear-gradient(135deg, #ff6a3d 0%, #e11226 100%);
-  box-shadow: 0 12px 26px rgba(225, 18, 38, .40);
-}
-#advantages .cards .card:nth-child(even) .card-icon {
-  background: linear-gradient(135deg, #4a7bf0 0%, #1c2fa6 100%);
-  box-shadow: 0 12px 26px rgba(28, 47, 166, .40);
+#advantages .cards .card .card-icon {
+  background: linear-gradient(135deg, #ff4338 0%, #c1121f 100%);
+  box-shadow: 0 12px 26px rgba(225, 18, 38, .42);
 }
 #advantages .cards .card:hover .card-icon { transform: translateY(-3px) scale(1.04); }
 .ico { display: inline-flex; vertical-align: -4px; margin-right: 8px; color: var(--accent); }

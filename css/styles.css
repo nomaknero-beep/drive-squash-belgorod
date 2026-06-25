@@ -76,3 +76,8 @@ h2 { font-size: clamp(26px, 4vw, 36px); margin-bottom: 28px; }
   .nav { display: none; }
   .section { padding: 56px 16px; }
 }
+.rating { width: 100%; border-collapse: collapse; margin-bottom: 32px; }
+.rating th, .rating td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--border); }
+.rating th { color: var(--muted); font-weight: 600; }
+.rating tbody tr:hover { background: var(--bg-alt); }
+.tour-title { margin: 24px 0 16px; }

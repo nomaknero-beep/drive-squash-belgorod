@@ -1,0 +1,3 @@
+api/config.php
+api/*.log
+.DS_Store

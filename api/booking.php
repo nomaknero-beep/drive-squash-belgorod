@@ -33,12 +33,12 @@ if ($name === '' || strlen($digits) < 10) {
 }
 
 $text = "🎾 <b>Новая заявка на бронь</b>\n"
-    . "Имя: " . htmlspecialchars($name) . "\n"
-    . "Телефон: " . htmlspecialchars($phone) . "\n"
-    . "Дата: " . htmlspecialchars($date) . "\n"
-    . "Время: " . htmlspecialchars($time) . "\n"
-    . "Корт: " . htmlspecialchars($court) . "\n"
-    . "Тренер: " . htmlspecialchars($coach !== '' ? $coach : 'без тренера');
+    . "Имя: " . htmlspecialchars($name, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8') . "\n"
+    . "Телефон: " . htmlspecialchars($phone, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8') . "\n"
+    . "Дата: " . htmlspecialchars($date, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8') . "\n"
+    . "Время: " . htmlspecialchars($time, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8') . "\n"
+    . "Корт: " . htmlspecialchars($court, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8') . "\n"
+    . "Тренер: " . htmlspecialchars($coach !== '' ? $coach : 'без тренера', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 
 $sent = sendTelegram($text);
 if (!$sent) {

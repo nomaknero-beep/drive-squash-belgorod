@@ -1,0 +1,10 @@
+# Запретить доступ к конфигу и логам
+<FilesMatch "(config\.php|\.log)$">
+  Require all denied
+</FilesMatch>
+<IfModule !mod_authz_core.c>
+  <FilesMatch "(config\.php|\.log)$">
+    Order allow,deny
+    Deny from all
+  </FilesMatch>
+</IfModule>
